@@ -1,0 +1,179 @@
+{
+  "tool": {
+    "id": "superficie-corporal",
+    "title": "Superfície corporal e IMC",
+    "short": "Mosteller e DuBois",
+    "spec": [
+      "oncologia-clinica",
+      "cardiologia",
+      "pediatria"
+    ],
+    "tier": 1,
+    "desc": "Calcule a superfície corporal (Mosteller e DuBois) e o índice de massa corporal, usados para indexar medidas do ecocardiograma e doses.",
+    "lead": "Calcula a superfície corporal e o IMC, usados para indexar volumes e massas do ecocardiograma, o débito cardíaco e doses de medicamentos.",
+    "fields": [
+      [
+        "peso",
+        "Peso",
+        "num",
+        {
+          "min": 2,
+          "max": 350,
+          "step": "0.1",
+          "unit": "kg",
+          "ph": "70"
+        }
+      ],
+      [
+        "altura",
+        "Altura",
+        "num",
+        {
+          "min": 40,
+          "max": 240,
+          "unit": "cm",
+          "ph": "170"
+        }
+      ]
+    ],
+    "formula": "<ul><li><strong>Mosteller:</strong> SC (m²) = √(altura [cm] × peso [kg] ÷ 3600)</li><li><strong>DuBois:</strong> SC (m²) = 0,007184 × peso<sup>0,425</sup> × altura<sup>0,725</sup></li><li><strong>IMC</strong> = peso ÷ altura² (m)</li></ul>",
+    "table": [
+      [
+        "IMC (kg/m²)",
+        "Classificação (OMS)"
+      ],
+      [
+        "&lt; 18,5",
+        "Baixo peso"
+      ],
+      [
+        "18,5 a 24,9",
+        "Eutrofia"
+      ],
+      [
+        "25 a 29,9",
+        "Sobrepeso"
+      ],
+      [
+        "30 a 34,9",
+        "Obesidade grau I"
+      ],
+      [
+        "35 a 39,9",
+        "Obesidade grau II"
+      ],
+      [
+        "≥ 40",
+        "Obesidade grau III"
+      ]
+    ],
+    "tips": [
+      "A ASE usa Mosteller ou DuBois para indexar medidas: mantenha o mesmo método no seguimento do paciente.",
+      "Em obesos graves, indexar pela superfície corporal pode \"normalizar\" uma câmara dilatada ou uma massa aumentada; alguns parâmetros são melhor indexados pela altura.",
+      "Na quimioterapia, a ASCO recomenda calcular a dose pelo <strong>peso real</strong> também em obesos, sem limitar a superfície corporal a 2 m² por rotina; reduções são decididas pela toxicidade, como em qualquer paciente.",
+      "A fórmula de Mosteller vale também para crianças e é a mais usada em pediatria e oncologia pela simplicidade; confira peso e altura do dia, porque um erro de digitação muda a dose."
+    ],
+    "sources": [
+      [
+        "Mosteller RD. Simplified calculation of body-surface area. N Engl J Med, 1987.",
+        "https://doi.org/10.1056/NEJM198710223171717"
+      ],
+      [
+        "Griggs JJ et al. Appropriate chemotherapy dosing for obese adult patients with cancer: American Society of Clinical Oncology clinical practice guideline. J Clin Oncol, 2012.",
+        "https://doi.org/10.1200/JCO.2011.39.9436"
+      ],
+      [
+        "Lang RM et al. Recommendations for cardiac chamber quantification by echocardiography in adults (ASE/EACVI). J Am Soc Echocardiogr, 2015.",
+        "https://doi.org/10.1016/j.echo.2014.10.003"
+      ]
+    ],
+    "cases": [
+      [
+        "70 kg, 170 cm: Mosteller 1,82 · DuBois 1,81 m² · IMC 24,2",
+        {
+          "peso": 70,
+          "altura": 170
+        },
+        {
+          "raw": {
+            "mosteller": 1.818,
+            "dubois": 1.81,
+            "imc": 24.22
+          },
+          "tol": 0.003
+        }
+      ],
+      [
+        "50 kg, 160 cm: Mosteller 1,49 m² · IMC 19,5",
+        {
+          "peso": 50,
+          "altura": 160
+        },
+        {
+          "raw": {
+            "mosteller": 1.4907,
+            "imc": 19.53
+          },
+          "tol": 0.003
+        }
+      ]
+    ],
+    "batch": "cardiologia",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "onco-diagnostico",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/cardiologia.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 2,
+      "passed": 2,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 2,
+      "passed": 2,
+      "cases": [
+        {
+          "label": "Mosteller: √(180×80/3600)=2 m²",
+          "input": {
+            "peso": 80,
+            "altura": 180
+          },
+          "expected": {
+            "mosteller": 2
+          },
+          "status": "passed",
+          "failures": []
+        },
+        {
+          "label": "Quadruplicar massa dobra Mosteller",
+          "input": {
+            "peso": 320,
+            "altura": 180
+          },
+          "expected": {
+            "mosteller": 4
+          },
+          "status": "passed",
+          "failures": []
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/cardiologia.php",
+    "sha256": "ed536451dd02922a7f840f2c9ce575be004cddb227f60426b7a52cf1b0e94ec0",
+    "bytes": 61303
+  },
+  "clinicalValidation": "not-performed"
+}
