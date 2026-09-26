@@ -1,7 +1,7 @@
 {
   "name": "@elucenia/tool-superficie-corporal",
   "version": "0.1.0",
-  "description": "Superfície corporal e IMC · Elucenia: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
+  "description": "Superfície corporal e IMC · ELUCENIA: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
   "keywords": [
     "elucenia",
     "medical-calculator",
