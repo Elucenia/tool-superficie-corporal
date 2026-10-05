@@ -1,0 +1,237 @@
+{
+  "id": "superficie-corporal",
+  "at": "2026-10-05T17:30:09.432Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/superficie-corporal/calculator.js",
+    "bytes": 5111,
+    "sha256": "4a758bb7aae0679c619a751f8ffeb95e1c62732247458e2cf3e45337ca0f7c95"
+  },
+  "cases": [
+    {
+      "name": "70 kg, 170 cm: Mosteller 1,82 · DuBois 1,81 m² · IMC 24,2",
+      "input": {
+        "peso": 70,
+        "altura": 170
+      },
+      "obtained": {
+        "id": "superficie-corporal",
+        "main": [
+          "1,82",
+          "m²"
+        ],
+        "label": "Superfície corporal (Mosteller)",
+        "raw": {
+          "mosteller": 1.818118685772619,
+          "dubois": 1.809707801753247,
+          "imc": 24.221453287197235
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.mosteller",
+          "expected": 1.818,
+          "obtained": 1.818118685772619,
+          "tolerance": 0.003,
+          "difference": 0.00011868577261897606,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.dubois",
+          "expected": 1.81,
+          "obtained": 1.809707801753247,
+          "tolerance": 0.003,
+          "difference": 0.0002921982467529727,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.imc",
+          "expected": 24.22,
+          "obtained": 24.221453287197235,
+          "tolerance": 0.003,
+          "difference": 0.0014532871972363637,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.mosteller",
+          "expected": 1.818118685772619,
+          "obtained": 1.818118685772619,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.dubois",
+          "expected": 1.809707801753247,
+          "obtained": 1.809707801753247,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.imc",
+          "expected": 24.221453287197235,
+          "obtained": 24.221453287197235,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "1,82",
+          "obtained": "1,82",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "m²",
+          "obtained": "m²",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [],
+      "status": "passed"
+    },
+    {
+      "name": "50 kg, 160 cm: Mosteller 1,49 m² · IMC 19,5",
+      "input": {
+        "peso": 50,
+        "altura": 160
+      },
+      "obtained": {
+        "id": "superficie-corporal",
+        "main": [
+          "1,49",
+          "m²"
+        ],
+        "label": "Superfície corporal (Mosteller)",
+        "raw": {
+          "mosteller": 1.4907119849998598,
+          "dubois": 1.501120524208146,
+          "imc": 19.531249999999996
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.mosteller",
+          "expected": 1.4907,
+          "obtained": 1.4907119849998598,
+          "tolerance": 0.003,
+          "difference": 0.000011984999859881995,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.imc",
+          "expected": 19.53,
+          "obtained": 19.531249999999996,
+          "tolerance": 0.003,
+          "difference": 0.0012499999999953104,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.mosteller",
+          "expected": 1.4907119849998598,
+          "obtained": 1.4907119849998598,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.dubois",
+          "expected": 1.501120524208146,
+          "obtained": 1.501120524208146,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.imc",
+          "expected": 19.531249999999996,
+          "obtained": 19.531249999999996,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "1,49",
+          "obtained": "1,49",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "m²",
+          "obtained": "m²",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 24,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}

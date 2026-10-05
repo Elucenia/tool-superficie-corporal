@@ -1,6 +1,13 @@
 [
   {
-    "label": "70 kg, 170 cm: Mosteller 1,82 · DuBois 1,81 m² · IMC 24,2",
+    "id": "superficie-corporal",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "70 kg, 170 cm: Mosteller 1,82 · DuBois 1,81 m² · IMC 24,2",
+    "originalInput": {
+      "peso": 70,
+      "altura": 170
+    },
     "input": {
       "peso": 70,
       "altura": 170
@@ -13,14 +20,36 @@
       },
       "tol": 0.003
     },
-    "originalInput": {
-      "peso": 70,
-      "altura": 170
+    "recordedResult": {
+      "main": [
+        "1,82",
+        "m²"
+      ],
+      "label": "Superfície corporal (Mosteller)",
+      "raw": {
+        "mosteller": 1.818118685772619,
+        "dubois": 1.809707801753247,
+        "imc": 24.221453287197235
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "50 kg, 160 cm: Mosteller 1,49 m² · IMC 19,5",
+    "id": "superficie-corporal",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "50 kg, 160 cm: Mosteller 1,49 m² · IMC 19,5",
+    "originalInput": {
+      "peso": 50,
+      "altura": 160
+    },
     "input": {
       "peso": 50,
       "altura": 160
@@ -32,10 +61,25 @@
       },
       "tol": 0.003
     },
-    "originalInput": {
-      "peso": 50,
-      "altura": 160
+    "recordedResult": {
+      "main": [
+        "1,49",
+        "m²"
+      ],
+      "label": "Superfície corporal (Mosteller)",
+      "raw": {
+        "mosteller": 1.4907119849998598,
+        "dubois": 1.501120524208146,
+        "imc": 19.531249999999996
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

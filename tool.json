@@ -3,14 +3,14 @@
     "id": "superficie-corporal",
     "title": "Superfície corporal e IMC",
     "short": "Mosteller e DuBois",
+    "desc": "Calcule a superfície corporal (Mosteller e DuBois) e o índice de massa corporal, usados para indexar medidas do ecocardiograma e doses.",
+    "lead": "Calcula a superfície corporal e o IMC, usados para indexar volumes e massas do ecocardiograma, o débito cardíaco e doses de medicamentos.",
+    "kind": "Calculadora",
     "spec": [
       "oncologia-clinica",
       "cardiologia",
       "pediatria"
     ],
-    "tier": 1,
-    "desc": "Calcule a superfície corporal (Mosteller e DuBois) e o índice de massa corporal, usados para indexar medidas do ecocardiograma e doses.",
-    "lead": "Calcula a superfície corporal e o IMC, usados para indexar volumes e massas do ecocardiograma, o débito cardíaco e doses de medicamentos.",
     "fields": [
       [
         "peso",
@@ -37,42 +37,6 @@
       ]
     ],
     "formula": "<ul><li><strong>Mosteller:</strong> SC (m²) = √(altura [cm] × peso [kg] ÷ 3600)</li><li><strong>DuBois:</strong> SC (m²) = 0,007184 × peso<sup>0,425</sup> × altura<sup>0,725</sup></li><li><strong>IMC</strong> = peso ÷ altura² (m)</li></ul>",
-    "table": [
-      [
-        "IMC (kg/m²)",
-        "Classificação (OMS)"
-      ],
-      [
-        "&lt; 18,5",
-        "Baixo peso"
-      ],
-      [
-        "18,5 a 24,9",
-        "Eutrofia"
-      ],
-      [
-        "25 a 29,9",
-        "Sobrepeso"
-      ],
-      [
-        "30 a 34,9",
-        "Obesidade grau I"
-      ],
-      [
-        "35 a 39,9",
-        "Obesidade grau II"
-      ],
-      [
-        "≥ 40",
-        "Obesidade grau III"
-      ]
-    ],
-    "tips": [
-      "A ASE usa Mosteller ou DuBois para indexar medidas: mantenha o mesmo método no seguimento do paciente.",
-      "Em obesos graves, indexar pela superfície corporal pode \"normalizar\" uma câmara dilatada ou uma massa aumentada; alguns parâmetros são melhor indexados pela altura.",
-      "Na quimioterapia, a ASCO recomenda calcular a dose pelo <strong>peso real</strong> também em obesos, sem limitar a superfície corporal a 2 m² por rotina; reduções são decididas pela toxicidade, como em qualquer paciente.",
-      "A fórmula de Mosteller vale também para crianças e é a mais usada em pediatria e oncologia pela simplicidade; confira peso e altura do dia, porque um erro de digitação muda a dose."
-    ],
     "sources": [
       [
         "Mosteller RD. Simplified calculation of body-surface area. N Engl J Med, 1987.",
@@ -118,9 +82,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -133,38 +94,173 @@
       "testedAt": "2026-09-25",
       "total": 2,
       "passed": 2,
-      "cases": [
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Mosteller 1987 sqrt(cm×kg/3600); Du Bois 1916 coeficiente 0,007184/potências 0,425/0,725; IMCseparado",
+    "implementationVersion": "superficie-corporal@native-2026-10-03+4a758bb7aae0",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/3657876/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Mosteller: SC (m²) = √(altura [cm] × peso [kg] ÷ 3600) DuBois: SC (m²) = 0,007184 × peso 0,425 × altura 0,725 IMC = peso ÷ altura² (m)",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "peso",
+            "label": "Peso",
+            "type": "num",
+            "min": 2,
+            "max": 350,
+            "unit": "kg",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "altura",
+            "label": "Altura",
+            "type": "num",
+            "min": 40,
+            "max": 240,
+            "unit": "cm",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "e17ef14093a97ad3bb477450fffb9944e43f7d14aa0810b1bb5dd56231966377"
+      },
+      "sourceEditions": [
         {
-          "label": "Mosteller: √(180×80/3600)=2 m²",
-          "input": {
-            "peso": 80,
-            "altura": 180
+          "citation": "Mosteller RD. Simplified calculation of body-surface area. N Engl J Med, 1987.",
+          "url": "https://doi.org/10.1056/NEJM198710223171717",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Simplified calculation of body-surface area.",
+            "year": "1987",
+            "firstPublicationDate": "1987-10-01",
+            "doi": "10.1056/nejm198710223171717",
+            "pmid": "3657876",
+            "journal": "The New England journal of medicine",
+            "authors": "Mosteller RD."
           },
-          "expected": {
-            "mosteller": 2
-          },
-          "status": "passed",
-          "failures": []
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/3657876/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
         },
         {
-          "label": "Quadruplicar massa dobra Mosteller",
-          "input": {
-            "peso": 320,
-            "altura": 180
+          "citation": "Griggs JJ et al. Appropriate chemotherapy dosing for obese adult patients with cancer: American Society of Clinical Oncology clinical practice guideline. J Clin Oncol, 2012.",
+          "url": "https://doi.org/10.1200/JCO.2011.39.9436",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Appropriate chemotherapy dosing for obese adult patients with cancer: American Society of Clinical Oncology clinical practice guideline.",
+            "year": "2012",
+            "firstPublicationDate": "2012-04-02",
+            "doi": "10.1200/jco.2011.39.9436",
+            "pmid": "22473167",
+            "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+            "authors": "Griggs JJ, Mangu PB, Anderson H, Balaban EP, Dignam JJ, Hryniuk WM, Morrison VA, Pini TM, Runowicz CD, Rosner GL, Shayne M, Sparreboom A, Sucheston LE, Lyman GH, American Society of Clinical Oncology."
           },
-          "expected": {
-            "mosteller": 4
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/22473167/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "c9490a0c594d905bec70e7b4da119896f403c971d361775a794be8f7bacfa28c",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Lang RM et al. Recommendations for cardiac chamber quantification by echocardiography in adults (ASE/EACVI). J Am Soc Echocardiogr, 2015.",
+          "url": "https://doi.org/10.1016/j.echo.2014.10.003",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Recommendations for cardiac chamber quantification by echocardiography in adults: an update from the American Society of Echocardiography and the European Association of Cardiovascular Imaging.",
+            "year": "2015",
+            "firstPublicationDate": "2015-01-01",
+            "doi": "10.1016/j.echo.2014.10.003",
+            "pmid": "25559473",
+            "journal": "Journal of the American Society of Echocardiography : official publication of the American Society of Echocardiography",
+            "authors": "Lang RM, Badano LP, Mor-Avi V, Afilalo J, Armstrong A, Ernande L, Flachskampf FA, Foster E, Goldstein SA, Kuznetsova T, Kuznetsova T, Lancellotti P, Muraru D, Picard MH, Rietzschel ER, Rudski L, Spencer KT, Tsang W, Voigt JU."
           },
-          "status": "passed",
-          "failures": []
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/25559473/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "887dd5122e2db8d1a30f98a5e51f719631d1e8045655442e84b77aac65c02c54",
+          "matchedBy": "exact-DOI-or-PMID"
         }
-      ]
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-09-25",
+        "total": 2,
+        "passed": 2,
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "4a758bb7aae0679c619a751f8ffeb95e1c62732247458e2cf3e45337ca0f7c95"
+    },
+    "limits": "Informe altura em cm e peso em kg; o resultado é uma estimativa de superfície corporal em m², distinta do IMC. Mosteller e Du Bois são equações diferentes, não medidas diretas da superfície. A diretriz ASCO 2012 citada trata de doses de quimioterapia citotóxica em adultos obesos com câncer e não abrange novos agentes alvo daquela edição. Calcular a superfície não define dose, teto de superfície ou indicação: a decisão deve seguir o protocolo e o medicamento específicos, sem deduzir limites universais dessa referência.",
+    "limitsEvidence": {
+      "status": "original-guideline-abstracts-read",
+      "sources": [
+        {
+          "url": "https://doi.org/10.1200/JCO.2011.39.9436",
+          "edition": "ASCOGriggs2012",
+          "readScope": "Exact original guideline abstract fully read:obeseadultcancer,cytotoxicchemotherapy,does notaddressnoveltargetedagents."
+        },
+        {
+          "url": "https://doi.org/10.1056/NEJM198710223171717",
+          "edition": "Mosteller1987",
+          "readScope": "Identity only;original letter not read."
+        },
+        {
+          "url": "https://doi.org/10.1016/j.echo.2014.10.003",
+          "edition": "ASE/EACVI2015",
+          "readScope": "Exact original guideline abstract read for adult context only;BSArecommendation sections not newly read."
+        }
+      ],
+      "populationScope": "Geometric estimate in m²;drug-specific dosing policy requires separate source.",
+      "remainingChecks": [
+        "OriginalMosteller1987 letter and originalDuBois1916 paper not newly read.",
+        "ASCO2012 applicability is not latest2026drugpolicy certification."
+      ],
+      "clinicalValidation": "not-performed",
+      "professionalLanguageReview": "not-performed",
+      "rightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/superficie-corporal/calculator.js",
+    "bytes": 5111,
+    "sha256": "4a758bb7aae0679c619a751f8ffeb95e1c62732247458e2cf3e45337ca0f7c95"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "f696b84295c366c23531c59712fda00d4fe7e0106c9e1088a8aded0c39028ac2",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 2,
+      "sha256": "47b480444a098c2b32fef476675922a32685270903d22b48b1bd99310bd071da",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 2,
+      "sha256": "47b480444a098c2b32fef476675922a32685270903d22b48b1bd99310bd071da",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }
