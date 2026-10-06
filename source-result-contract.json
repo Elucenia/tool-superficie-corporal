@@ -1,0 +1,149 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "superficie-corporal",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "396c875f8051c51a3aeadd7577d496b7c0c09a2a",
+    "oldEngineSha256": "4a758bb7aae0679c619a751f8ffeb95e1c62732247458e2cf3e45337ca0f7c95",
+    "currentEngineSha256": "8e68a2a807dc4c567740b3829a99544d4714e13e4acbc7318054b8c729e7205b"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "70 kg, 170 cm: Mosteller 1,82 · DuBois 1,81 m² · IMC 24,2",
+      "input": {
+        "peso": 70,
+        "altura": 170
+      },
+      "publicOutput": {
+        "id": "superficie-corporal",
+        "main": [
+          "1,82",
+          "m²"
+        ],
+        "label": "Superfície corporal (Mosteller)",
+        "raw": {
+          "mosteller": 1.818118685772619,
+          "dubois": 1.809707801753247,
+          "imc": 24.221453287197235
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "mosteller": 1.818,
+          "dubois": 1.81,
+          "imc": 24.22
+        },
+        "tol": 0.003
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "1,82",
+          "m²"
+        ],
+        "label": "Superfície corporal (Mosteller)",
+        "level": "info",
+        "verdict": "IMC 24,2 kg/m²: eutrofia",
+        "rows": [
+          [
+            "DuBois",
+            "1,81 m²"
+          ],
+          [
+            "IMC",
+            "24,2 kg/m²"
+          ]
+        ],
+        "raw": {
+          "mosteller": 1.818118685772619,
+          "dubois": 1.809707801753247,
+          "imc": 24.221453287197235
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "50 kg, 160 cm: Mosteller 1,49 m² · IMC 19,5",
+      "input": {
+        "peso": 50,
+        "altura": 160
+      },
+      "publicOutput": {
+        "id": "superficie-corporal",
+        "main": [
+          "1,49",
+          "m²"
+        ],
+        "label": "Superfície corporal (Mosteller)",
+        "raw": {
+          "mosteller": 1.4907119849998598,
+          "dubois": 1.501120524208146,
+          "imc": 19.531249999999996
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "mosteller": 1.4907,
+          "imc": 19.53
+        },
+        "tol": 0.003
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "1,49",
+          "m²"
+        ],
+        "label": "Superfície corporal (Mosteller)",
+        "level": "info",
+        "verdict": "IMC 19,5 kg/m²: eutrofia",
+        "rows": [
+          [
+            "DuBois",
+            "1,50 m²"
+          ],
+          [
+            "IMC",
+            "19,5 kg/m²"
+          ]
+        ],
+        "raw": {
+          "mosteller": 1.4907119849998598,
+          "dubois": 1.501120524208146,
+          "imc": 19.531249999999996
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    }
+  ]
+}

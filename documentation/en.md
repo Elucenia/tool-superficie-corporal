@@ -71,3 +71,27 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+BMI 24.2 kg/m²: normal weight
+
+| Result details | |
+| --- | --- |
+| DuBois | 1.81 m² |
+| BMI | 24.2 kg/m² |
+
+
+### 2
+
+BMI 19.5 kg/m²: normal weight
+
+| Result details | |
+| --- | --- |
+| DuBois | 1.50 m² |
+| BMI | 19.5 kg/m² |
+

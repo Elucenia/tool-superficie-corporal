@@ -97,7 +97,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Mosteller 1987 sqrt(cm×kg/3600); Du Bois 1916 coeficiente 0,007184/potências 0,425/0,725; IMCseparado",
-    "implementationVersion": "superficie-corporal@native-2026-10-03+4a758bb7aae0",
+    "implementationVersion": "superficie-corporal@native-2026-10-05+8e68a2a807dc",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/3657876/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -209,7 +209,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "4a758bb7aae0679c619a751f8ffeb95e1c62732247458e2cf3e45337ca0f7c95"
+      "implementationHash": "8e68a2a807dc4c567740b3829a99544d4714e13e4acbc7318054b8c729e7205b",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "superficie-corporal@native-2026-10-03+4a758bb7aae0",
+          "previousImplementationHash": "4a758bb7aae0679c619a751f8ffeb95e1c62732247458e2cf3e45337ca0f7c95",
+          "implementationHash": "8e68a2a807dc4c567740b3829a99544d4714e13e4acbc7318054b8c729e7205b",
+          "scientificBodySha256": "36f34381655b035418a03935e5f091530d2904e83b5e0e14fd89cb86c595fa56",
+          "metadataContractHash": "e17ef14093a97ad3bb477450fffb9944e43f7d14aa0810b1bb5dd56231966377",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "Informe altura em cm e peso em kg; o resultado é uma estimativa de superfície corporal em m², distinta do IMC. Mosteller e Du Bois são equações diferentes, não medidas diretas da superfície. A diretriz ASCO 2012 citada trata de doses de quimioterapia citotóxica em adultos obesos com câncer e não abrange novos agentes alvo daquela edição. Calcular a superfície não define dose, teto de superfície ou indicação: a decisão deve seguir o protocolo e o medicamento específicos, sem deduzir limites universais dessa referência.",
     "limitsEvidence": {
@@ -244,20 +272,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/superficie-corporal/calculator.js",
-    "bytes": 5111,
-    "sha256": "4a758bb7aae0679c619a751f8ffeb95e1c62732247458e2cf3e45337ca0f7c95"
+    "bytes": 5316,
+    "sha256": "8e68a2a807dc4c567740b3829a99544d4714e13e4acbc7318054b8c729e7205b"
   },
-  "sourceToolSha256": "f696b84295c366c23531c59712fda00d4fe7e0106c9e1088a8aded0c39028ac2",
+  "sourceToolSha256": "c2743a7af7187fcf922be2d9fa4c0adb67249c73f4c7fe573bb1ee2bcb5ff9d7",
   "omittedFullReferenceBanks": [
     {
       "rows": 2,
       "sha256": "47b480444a098c2b32fef476675922a32685270903d22b48b1bd99310bd071da",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 2,
       "sha256": "47b480444a098c2b32fef476675922a32685270903d22b48b1bd99310bd071da",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

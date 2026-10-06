@@ -1,0 +1,969 @@
+{
+  "id": "superficie-corporal",
+  "implementationVersion": "superficie-corporal@native-2026-10-05+8e68a2a807dc",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "70 kg, 170 cm: Mosteller 1,82 · DuBois 1,81 m² · IMC 24,2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "DuBois",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "1,81 m²",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "IMC",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "24,2 kg/m²",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "IMC 24,2 kg/m²: eutrofia",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "50 kg, 160 cm: Mosteller 1,49 m² · IMC 19,5",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "DuBois",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "1,50 m²",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "IMC",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "19,5 kg/m²",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "IMC 19,5 kg/m²: eutrofia",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "70 kg, 170 cm: Mosteller 1,82 · DuBois 1,81 m² · IMC 24,2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "DuBois",
+                "locale": "en",
+                "template": "documented-authored-c866b42759e99e39ea4d"
+              },
+              "value": {
+                "text": "1.81 m²",
+                "locale": "en",
+                "template": "documented-authored-3264e1e078d835d82116",
+                "sourceNumbers": [
+                  1.81
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "BMI",
+                "locale": "en",
+                "template": "documented-authored-a4ec18870fd7f9a2c4ce"
+              },
+              "value": {
+                "text": "24.2 kg/m²",
+                "locale": "en",
+                "template": "documented-authored-f752db34b3c04c58493e",
+                "sourceNumbers": [
+                  24.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "BMI 24.2 kg/m²: normal weight",
+            "locale": "en",
+            "template": "documented-authored-84a771fad8e0dadefea6",
+            "sourceNumbers": [
+              24.2
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "50 kg, 160 cm: Mosteller 1,49 m² · IMC 19,5",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "DuBois",
+                "locale": "en",
+                "template": "documented-authored-c866b42759e99e39ea4d"
+              },
+              "value": {
+                "text": "1.50 m²",
+                "locale": "en",
+                "template": "documented-authored-3264e1e078d835d82116",
+                "sourceNumbers": [
+                  1.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "BMI",
+                "locale": "en",
+                "template": "documented-authored-a4ec18870fd7f9a2c4ce"
+              },
+              "value": {
+                "text": "19.5 kg/m²",
+                "locale": "en",
+                "template": "documented-authored-f752db34b3c04c58493e",
+                "sourceNumbers": [
+                  19.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "BMI 19.5 kg/m²: normal weight",
+            "locale": "en",
+            "template": "documented-authored-84a771fad8e0dadefea6",
+            "sourceNumbers": [
+              19.5
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "70 kg, 170 cm: Mosteller 1,82 · DuBois 1,81 m² · IMC 24,2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "DuBois",
+                "locale": "es",
+                "template": "documented-authored-c866b42759e99e39ea4d"
+              },
+              "value": {
+                "text": "1,81 m²",
+                "locale": "es",
+                "template": "documented-authored-3264e1e078d835d82116",
+                "sourceNumbers": [
+                  1.81
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "IMC",
+                "locale": "es",
+                "template": "documented-authored-a4ec18870fd7f9a2c4ce"
+              },
+              "value": {
+                "text": "24,2 kg/m²",
+                "locale": "es",
+                "template": "documented-authored-f752db34b3c04c58493e",
+                "sourceNumbers": [
+                  24.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "IMC 24,2 kg/m²: normopeso",
+            "locale": "es",
+            "template": "documented-authored-84a771fad8e0dadefea6",
+            "sourceNumbers": [
+              24.2
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "50 kg, 160 cm: Mosteller 1,49 m² · IMC 19,5",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "DuBois",
+                "locale": "es",
+                "template": "documented-authored-c866b42759e99e39ea4d"
+              },
+              "value": {
+                "text": "1,50 m²",
+                "locale": "es",
+                "template": "documented-authored-3264e1e078d835d82116",
+                "sourceNumbers": [
+                  1.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "IMC",
+                "locale": "es",
+                "template": "documented-authored-a4ec18870fd7f9a2c4ce"
+              },
+              "value": {
+                "text": "19,5 kg/m²",
+                "locale": "es",
+                "template": "documented-authored-f752db34b3c04c58493e",
+                "sourceNumbers": [
+                  19.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "IMC 19,5 kg/m²: normopeso",
+            "locale": "es",
+            "template": "documented-authored-84a771fad8e0dadefea6",
+            "sourceNumbers": [
+              19.5
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "70 kg, 170 cm: Mosteller 1,82 · DuBois 1,81 m² · IMC 24,2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "DuBois",
+                "locale": "fr",
+                "template": "documented-authored-c866b42759e99e39ea4d"
+              },
+              "value": {
+                "text": "1,81 m²",
+                "locale": "fr",
+                "template": "documented-authored-3264e1e078d835d82116",
+                "sourceNumbers": [
+                  1.81
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "IMC",
+                "locale": "fr",
+                "template": "documented-authored-a4ec18870fd7f9a2c4ce"
+              },
+              "value": {
+                "text": "24,2 kg/m²",
+                "locale": "fr",
+                "template": "documented-authored-f752db34b3c04c58493e",
+                "sourceNumbers": [
+                  24.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "IMC 24,2 kg/m² : poids normal",
+            "locale": "fr",
+            "template": "documented-authored-84a771fad8e0dadefea6",
+            "sourceNumbers": [
+              24.2
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "50 kg, 160 cm: Mosteller 1,49 m² · IMC 19,5",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "DuBois",
+                "locale": "fr",
+                "template": "documented-authored-c866b42759e99e39ea4d"
+              },
+              "value": {
+                "text": "1,50 m²",
+                "locale": "fr",
+                "template": "documented-authored-3264e1e078d835d82116",
+                "sourceNumbers": [
+                  1.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "IMC",
+                "locale": "fr",
+                "template": "documented-authored-a4ec18870fd7f9a2c4ce"
+              },
+              "value": {
+                "text": "19,5 kg/m²",
+                "locale": "fr",
+                "template": "documented-authored-f752db34b3c04c58493e",
+                "sourceNumbers": [
+                  19.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "IMC 19,5 kg/m² : poids normal",
+            "locale": "fr",
+            "template": "documented-authored-84a771fad8e0dadefea6",
+            "sourceNumbers": [
+              19.5
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "70 kg, 170 cm: Mosteller 1,82 · DuBois 1,81 m² · IMC 24,2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "DuBois",
+                "locale": "de",
+                "template": "documented-authored-c866b42759e99e39ea4d"
+              },
+              "value": {
+                "text": "1,81 m²",
+                "locale": "de",
+                "template": "documented-authored-3264e1e078d835d82116",
+                "sourceNumbers": [
+                  1.81
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "BMI",
+                "locale": "de",
+                "template": "documented-authored-a4ec18870fd7f9a2c4ce"
+              },
+              "value": {
+                "text": "24,2 kg/m²",
+                "locale": "de",
+                "template": "documented-authored-f752db34b3c04c58493e",
+                "sourceNumbers": [
+                  24.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "BMI 24,2 kg/m²: Normalgewicht",
+            "locale": "de",
+            "template": "documented-authored-84a771fad8e0dadefea6",
+            "sourceNumbers": [
+              24.2
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "50 kg, 160 cm: Mosteller 1,49 m² · IMC 19,5",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "DuBois",
+                "locale": "de",
+                "template": "documented-authored-c866b42759e99e39ea4d"
+              },
+              "value": {
+                "text": "1,50 m²",
+                "locale": "de",
+                "template": "documented-authored-3264e1e078d835d82116",
+                "sourceNumbers": [
+                  1.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "BMI",
+                "locale": "de",
+                "template": "documented-authored-a4ec18870fd7f9a2c4ce"
+              },
+              "value": {
+                "text": "19,5 kg/m²",
+                "locale": "de",
+                "template": "documented-authored-f752db34b3c04c58493e",
+                "sourceNumbers": [
+                  19.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "BMI 19,5 kg/m²: Normalgewicht",
+            "locale": "de",
+            "template": "documented-authored-84a771fad8e0dadefea6",
+            "sourceNumbers": [
+              19.5
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "70 kg, 170 cm: Mosteller 1,82 · DuBois 1,81 m² · IMC 24,2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "DuBois",
+                "locale": "it",
+                "template": "documented-authored-c866b42759e99e39ea4d"
+              },
+              "value": {
+                "text": "1,81 m²",
+                "locale": "it",
+                "template": "documented-authored-3264e1e078d835d82116",
+                "sourceNumbers": [
+                  1.81
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "IMC",
+                "locale": "it",
+                "template": "documented-authored-a4ec18870fd7f9a2c4ce"
+              },
+              "value": {
+                "text": "24,2 kg/m²",
+                "locale": "it",
+                "template": "documented-authored-f752db34b3c04c58493e",
+                "sourceNumbers": [
+                  24.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "IMC 24,2 kg/m²: normopeso",
+            "locale": "it",
+            "template": "documented-authored-84a771fad8e0dadefea6",
+            "sourceNumbers": [
+              24.2
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "50 kg, 160 cm: Mosteller 1,49 m² · IMC 19,5",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "DuBois",
+                "locale": "it",
+                "template": "documented-authored-c866b42759e99e39ea4d"
+              },
+              "value": {
+                "text": "1,50 m²",
+                "locale": "it",
+                "template": "documented-authored-3264e1e078d835d82116",
+                "sourceNumbers": [
+                  1.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "IMC",
+                "locale": "it",
+                "template": "documented-authored-a4ec18870fd7f9a2c4ce"
+              },
+              "value": {
+                "text": "19,5 kg/m²",
+                "locale": "it",
+                "template": "documented-authored-f752db34b3c04c58493e",
+                "sourceNumbers": [
+                  19.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "IMC 19,5 kg/m²: normopeso",
+            "locale": "it",
+            "template": "documented-authored-84a771fad8e0dadefea6",
+            "sourceNumbers": [
+              19.5
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "70 kg, 170 cm: Mosteller 1,82 · DuBois 1,81 m² · IMC 24,2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "DuBois",
+                "locale": "ar",
+                "template": "documented-authored-c866b42759e99e39ea4d"
+              },
+              "value": {
+                "text": "١٫٨١ m²",
+                "locale": "ar",
+                "template": "documented-authored-3264e1e078d835d82116",
+                "sourceNumbers": [
+                  1.81
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "مؤشر كتلة الجسم (BMI)",
+                "locale": "ar",
+                "template": "documented-authored-a4ec18870fd7f9a2c4ce"
+              },
+              "value": {
+                "text": "٢٤٫٢ kg/m²",
+                "locale": "ar",
+                "template": "documented-authored-f752db34b3c04c58493e",
+                "sourceNumbers": [
+                  24.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "IMC ٢٤٫٢ kg/m²: وزن طبيعي",
+            "locale": "ar",
+            "template": "documented-authored-84a771fad8e0dadefea6",
+            "sourceNumbers": [
+              24.2
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "50 kg, 160 cm: Mosteller 1,49 m² · IMC 19,5",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "DuBois",
+                "locale": "ar",
+                "template": "documented-authored-c866b42759e99e39ea4d"
+              },
+              "value": {
+                "text": "١٫٥٠ m²",
+                "locale": "ar",
+                "template": "documented-authored-3264e1e078d835d82116",
+                "sourceNumbers": [
+                  1.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "مؤشر كتلة الجسم (BMI)",
+                "locale": "ar",
+                "template": "documented-authored-a4ec18870fd7f9a2c4ce"
+              },
+              "value": {
+                "text": "١٩٫٥ kg/m²",
+                "locale": "ar",
+                "template": "documented-authored-f752db34b3c04c58493e",
+                "sourceNumbers": [
+                  19.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "IMC ١٩٫٥ kg/m²: وزن طبيعي",
+            "locale": "ar",
+            "template": "documented-authored-84a771fad8e0dadefea6",
+            "sourceNumbers": [
+              19.5
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "70 kg, 170 cm: Mosteller 1,82 · DuBois 1,81 m² · IMC 24,2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "DuBois",
+                "locale": "zh",
+                "template": "documented-authored-c866b42759e99e39ea4d"
+              },
+              "value": {
+                "text": "1.81 m²",
+                "locale": "zh",
+                "template": "documented-authored-3264e1e078d835d82116",
+                "sourceNumbers": [
+                  1.81
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "体质指数（BMI）",
+                "locale": "zh",
+                "template": "documented-authored-a4ec18870fd7f9a2c4ce"
+              },
+              "value": {
+                "text": "24.2 kg/m²",
+                "locale": "zh",
+                "template": "documented-authored-f752db34b3c04c58493e",
+                "sourceNumbers": [
+                  24.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "BMI 24.2 kg/m²：正常体重",
+            "locale": "zh",
+            "template": "documented-authored-84a771fad8e0dadefea6",
+            "sourceNumbers": [
+              24.2
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "50 kg, 160 cm: Mosteller 1,49 m² · IMC 19,5",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "DuBois",
+                "locale": "zh",
+                "template": "documented-authored-c866b42759e99e39ea4d"
+              },
+              "value": {
+                "text": "1.50 m²",
+                "locale": "zh",
+                "template": "documented-authored-3264e1e078d835d82116",
+                "sourceNumbers": [
+                  1.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "体质指数（BMI）",
+                "locale": "zh",
+                "template": "documented-authored-a4ec18870fd7f9a2c4ce"
+              },
+              "value": {
+                "text": "19.5 kg/m²",
+                "locale": "zh",
+                "template": "documented-authored-f752db34b3c04c58493e",
+                "sourceNumbers": [
+                  19.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "BMI 19.5 kg/m²：正常体重",
+            "locale": "zh",
+            "template": "documented-authored-84a771fad8e0dadefea6",
+            "sourceNumbers": [
+              19.5
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "70 kg, 170 cm: Mosteller 1,82 · DuBois 1,81 m² · IMC 24,2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "DuBois",
+                "locale": "ja",
+                "template": "documented-authored-c866b42759e99e39ea4d"
+              },
+              "value": {
+                "text": "1.81 m²",
+                "locale": "ja",
+                "template": "documented-authored-3264e1e078d835d82116",
+                "sourceNumbers": [
+                  1.81
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "体格指数（BMI）",
+                "locale": "ja",
+                "template": "documented-authored-a4ec18870fd7f9a2c4ce"
+              },
+              "value": {
+                "text": "24.2 kg/m²",
+                "locale": "ja",
+                "template": "documented-authored-f752db34b3c04c58493e",
+                "sourceNumbers": [
+                  24.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "BMI 24.2 kg/m²：標準体重",
+            "locale": "ja",
+            "template": "documented-authored-84a771fad8e0dadefea6",
+            "sourceNumbers": [
+              24.2
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "50 kg, 160 cm: Mosteller 1,49 m² · IMC 19,5",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "DuBois",
+                "locale": "ja",
+                "template": "documented-authored-c866b42759e99e39ea4d"
+              },
+              "value": {
+                "text": "1.50 m²",
+                "locale": "ja",
+                "template": "documented-authored-3264e1e078d835d82116",
+                "sourceNumbers": [
+                  1.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "体格指数（BMI）",
+                "locale": "ja",
+                "template": "documented-authored-a4ec18870fd7f9a2c4ce"
+              },
+              "value": {
+                "text": "19.5 kg/m²",
+                "locale": "ja",
+                "template": "documented-authored-f752db34b3c04c58493e",
+                "sourceNumbers": [
+                  19.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "BMI 19.5 kg/m²：標準体重",
+            "locale": "ja",
+            "template": "documented-authored-84a771fad8e0dadefea6",
+            "sourceNumbers": [
+              19.5
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "70 kg, 170 cm: Mosteller 1,82 · DuBois 1,81 m² · IMC 24,2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "DuBois",
+                "locale": "hi",
+                "template": "documented-authored-c866b42759e99e39ea4d"
+              },
+              "value": {
+                "text": "1.81 m²",
+                "locale": "hi",
+                "template": "documented-authored-3264e1e078d835d82116",
+                "sourceNumbers": [
+                  1.81
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "शरीर द्रव्यमान सूचकांक (BMI)",
+                "locale": "hi",
+                "template": "documented-authored-a4ec18870fd7f9a2c4ce"
+              },
+              "value": {
+                "text": "24.2 kg/m²",
+                "locale": "hi",
+                "template": "documented-authored-f752db34b3c04c58493e",
+                "sourceNumbers": [
+                  24.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "BMI 24.2 kg/m²: सामान्य वजन",
+            "locale": "hi",
+            "template": "documented-authored-84a771fad8e0dadefea6",
+            "sourceNumbers": [
+              24.2
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "50 kg, 160 cm: Mosteller 1,49 m² · IMC 19,5",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "DuBois",
+                "locale": "hi",
+                "template": "documented-authored-c866b42759e99e39ea4d"
+              },
+              "value": {
+                "text": "1.50 m²",
+                "locale": "hi",
+                "template": "documented-authored-3264e1e078d835d82116",
+                "sourceNumbers": [
+                  1.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "शरीर द्रव्यमान सूचकांक (BMI)",
+                "locale": "hi",
+                "template": "documented-authored-a4ec18870fd7f9a2c4ce"
+              },
+              "value": {
+                "text": "19.5 kg/m²",
+                "locale": "hi",
+                "template": "documented-authored-f752db34b3c04c58493e",
+                "sourceNumbers": [
+                  19.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "BMI 19.5 kg/m²: सामान्य वजन",
+            "locale": "hi",
+            "template": "documented-authored-84a771fad8e0dadefea6",
+            "sourceNumbers": [
+              19.5
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ]
+  }
+}
